@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Texto Interativo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Essencial para responsividade -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+     
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 10px;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 2;
+    }
+
+    input[type="text"] {
+      width: 130px;
+      padding: 6px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 2px solid #ccc;
+      transition: 0.3s ease;
+      text-align: center;
+      margin: 5px 0;
+    }
+
+    .correto {
+      border-color: rgb(0, 209, 0);
+      background-color: #47d65f;
+    }
+
+    .errado {
+      border-color: red;
+      background-color: #d82828;
+    }
+
+    .contador {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .espelho {
+      position: absolute;
+      visibility: hidden;
+      height: 0;
+      overflow: hidden;
+      white-space: pre;
+      font-family: inherit;
+      font-size: 16px;
+    }
+    .voltar {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 1rem;
+      color: #4a90e2;
+    }
+
+    /* Responsividade para celulares */
+    @media (max-width: 480px) {
+      .container {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.8;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        font-size: 16px;
+      }
+
+      .contador {
+        font-size: 16px;
+      }
+      .voltar {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="escolha.html" class="voltar">← Voltar</a>
+
+  <div class="container">
+    <h2>Complete as lacunas corretamente</h2>
+
+    <p>
+      <!-- O <input type="text" id="resposta1" placeholder="Planeta"> é o maior planeta do sistema solar.<br>
+      A água ferve a <input type="text" id="resposta2" placeholder="Temperatura"> graus Celsius.<br>
+      O Brasil foi descoberto em <input type="text" id="resposta3" placeholder="Ano">. -->
+
+
+    <h2>Seção II<br>Dos principais deveres do servidor público do IBGE</h2>
+
+    <strong>XIV - São deveres fundamentais do servidor do IBGE:</strong><br><br>
+
+    a) desempenhar, <input type="text" id="resposta1">, as atribuições do cargo, <input type="text" id="resposta2">
+    público de que seja titular;<br>
+
+    b) exercer suas atribuições <input type="text" id="resposta3">, pondo fim ou procurando prioritariamente <input
+      type="text" id="resposta4">, principalmente diante de <input type="text" id="resposta5"> ou de qualquer outra
+    espécie de <input type="text" id="resposta6"> pelo setor em que exerça suas atribuições, com o fim de evitar <input
+      type="text" id="resposta7">.<br>
+
+    c) ser probo, <input type="text" id="resposta8">, demonstrando toda a <input type="text" id="resposta9">, escolhendo
+    sempre, quando estiver diante de duas opções, a <input type="text" id="resposta10">;<br>
+
+    d) jamais retardar qualquer <input type="text" id="resposta11">, condição essencial da <input type="text"
+      id="resposta12">, direitos e <input type="text" id="resposta13"> a seu cargo;<br>
+
+    e) tratar <input type="text" id="resposta14"> os usuários dos serviços <input type="text" id="resposta15"> e contato com o
+    público;<br>
+
+    f) ter consciência de que seu <input type="text" id="resposta16"> que se materializam na <input type="text"
+      id="resposta17">;<br>
+
+    g) ser cortês, <input type="text" id="resposta18">, respeitando a capacidade e as <input type="text"
+      id="resposta19"> de todos os usuários do serviço público, sem qualquer espécie de <input type="text"
+      id="resposta20"> de raça, sexo, nacionalidade, cor, idade, religião, cunho político e posição social, abstendo-se,
+    dessa forma, de <input type="text" id="resposta21">;<br>
+
+    h) ter respeito à <input type="text" id="resposta22">, porém sem nenhum <input type="text" id="resposta23"> qualquer
+    comprometimento indevido da estrutura em que se funda o Poder Estatal;<br>
+
+    i) resistir a todas as <input type="text" id="resposta24">, de contratantes, interessados e outros que visem <input
+      type="text" id="resposta25">, benesses ou vantagens indevidas em <input type="text" id="resposta26">, ilegais ou
+    aéticas e denunciá-las;<br>
+
+    j) zelar, no exercício do <input type="text" id="resposta27">, pelas exigências específicas da defesa da vida e da
+    <input type="text" id="resposta28">;<br>
+
+    l) ser assíduo e frequente ao serviço, na certeza de que sua ausência <input type="text" id="resposta29">,
+    refletindo negativamente em todo o sistema;<br>
+
+    m) comunicar imediatamente a seus superiores <input type="text" id="resposta30">, exigindo as providências
+    cabíveis;<br>
+
+    n) manter <input type="text" id="resposta31"> o local de trabalho, seguindo os métodos <input type="text"
+      id="resposta32"> à sua organização e distribuição;<br>
+
+    o) participar dos <input type="text" id="resposta33"> que se relacionem com a melhoria do <input type="text"
+      id="resposta34">, tendo por escopo a realização do bem comum;<br>
+
+    p) apresentar-se ao trabalho com <input type="text" id="resposta35"> ao exercício da função;<br>
+
+    q) manter-se atualizado com as <input type="text" id="resposta36"> e a <input type="text" id="resposta37">
+    pertinentes ao órgão onde exerce suas funções;<br>
+
+    r) cumprir, de acordo com as <input type="text" id="resposta38">, as tarefas de <input type="text" id="resposta39">,
+    tanto quanto possível, com <input type="text" id="resposta40">, mantendo tudo sempre em boa ordem;<br>
+
+    s) facilitar a fiscalização de todos <input type="text" id="resposta41"> por quem de direito;<br>
+
+    t) exercer com <input type="text" id="resposta42"> as prerrogativas funcionais que lhe sejam atribuídas, abstendo-se
+    de <input type="text" id="resposta43"> aos legítimos interesses dos usuários do serviço público e dos <input
+      type="text" id="resposta44">;<br>
+
+    u) abster-se, <input type="text" id="resposta45">, de exercer sua função, poder ou autoridade com <input type="text"
+      id="resposta46">, mesmo que observando as formalidades legais e não cometendo qualquer violação expressa à
+    lei;<br>
+
+    v) apresentar, nas <input type="text" id="resposta47">, informações que estejam de acordo com as <input type="text"
+      id="resposta48"> sobre fontes, métodos e procedimentos, bem como <input type="text" id="resposta49"> e o uso
+    indevido de informações estatísticas e geocientíficas;<br>
+
+    x) zelar pela qualidade dos <input type="text" id="resposta50"> estatísticas e geocientíficas oficiais, adotando
+    <input type="text" id="resposta51"> tanto nas atividades finalísticas quanto nas <input type="text"
+      id="resposta52">;<br>
+
+    z) divulgar e informar a todos os <input type="text" id="resposta53"> sobre a existência deste Código de Ética,
+    estimulando o seu <input type="text" id="resposta54">.<br><br>
+
+    A conduta ética do servidor do IBGE deve respeitar a <input type="text" id="resposta55"> do Ministério do <input
+      type="text" id="resposta56"> e Gestão, assim como as normas <input type="text" id="resposta57">, expressas em suas
+    Resoluções, Ordens de Serviço, Portarias, Normas de Serviço e Memorandos.<br>
+
+
+
+    </p>
+
+    <div class="contador">
+      Acertos: <span id="acertos">0</span> de 57
+    </div>
+  </div>
+
+  <script>
+    const respostasCorretas = {
+      resposta1: "a tempo",
+      resposta2: "função ou emprego",
+      resposta3: "com rapidez, perfeição e rendimento",
+      resposta4: "resolver situações procrastinatórias",
+      resposta5: "filas",
+      resposta6: "atraso na prestação dos serviços",
+      resposta7: "dano moral ao usuário",
+      resposta8: "reto, leal e justo",
+      resposta9: "integridade do seu caráter",
+      resposta10: "melhor e a mais vantajosa para o bem comum",
+      resposta11: "prestação de contas",
+      resposta12: "gestão dos bens",
+      resposta13: "serviços da coletividade",
+      resposta14: "cuidadosamente",
+      resposta15: "aperfeiçoando o processo de comunicação",
+      resposta16: "trabalho é regido por princípios éticos",
+      resposta17: "adequada prestação dos serviços públicos",
+      resposta18: "ter urbanidade, disponibilidade e atenção",
+      resposta19: "limitações individuais",
+      resposta20: "preconceito ou distinção",
+      resposta21: "causar-lhes dano moral",
+      resposta22: "hierarquia",
+      resposta23: "temor de representar contra",
+      resposta24: "pressões de superiores hierárquicos",
+      resposta25: "obter quaisquer favores",
+      resposta26: "decorrência de ações imorais",
+      resposta27: "direito de greve",
+      resposta28: "segurança coletiva",
+      resposta29: "provoca danos ao trabalho ordenado",
+      resposta30: "todo e qualquer ato ou fato contrário ao interesse público",
+      resposta31: "limpo e em perfeita ordem",
+      resposta32: "mais adequados",
+      resposta33: "movimentos e estudos",
+      resposta34: "exercício de suas funções",
+      resposta35: "vestimentas adequadas",
+      resposta36: "instruções, as normas de serviço",
+      resposta37: "legislação",
+      resposta38: "normas do serviço e as instruções superiores",
+      resposta39: "seu cargo ou função",
+      resposta40: "critério, segurança e rapidez",
+      resposta41: "atos ou serviços",
+      resposta42: "estrita moderação",
+      resposta43: "fazê-lo contrariamente",
+      resposta44: "jurisdicionados administrativos",
+      resposta45: "de forma absoluta",
+      resposta46: "finalidade estranha ao interesse público",
+      resposta47: "análises estatísticas e geográficas",
+      resposta48: "normas científicas",
+      resposta49: "comentar as interpretações errôneas",
+      resposta50: "processos de produção das informações",
+      resposta51: "critérios de boas práticas",
+      resposta52: "atividades de apoio",
+      resposta53: "integrantes da sua classe",
+      resposta54: "integral cumprimento",
+      resposta55: "legislação e as normatizações",
+      resposta56: "Planejamento, Orçamento",
+      resposta57: "internas desta Fundação"
+
+    };
+
+    // Cria um span oculto para medir o texto digitado
+    const espelho = document.createElement('span');
+    espelho.className = 'espelho';
+    document.body.appendChild(espelho);
+
+    function ajustarLargura(input) {
+      espelho.textContent = input.value || input.placeholder || '';
+      const largura = espelho.offsetWidth + 20;
+      input.style.width = largura + 'px';
+    }
+
+    function verificar(id) {
+      const input = document.getElementById(id);
+      const valorUsuario = input.value.trim().toLowerCase();
+      const valorCorreto = respostasCorretas[id].toLowerCase();
+
+      if (valorUsuario === "") {
+        input.classList.remove("correto", "errado");
+      } else if (valorUsuario === valorCorreto) {
+        input.classList.add("correto");
+        input.classList.remove("errado");
+      } else {
+        input.classList.add("errado");
+        input.classList.remove("correto");
+      }
+
+      atualizarContador();
+    }
+
+    function atualizarContador() {
+      let total = 0;
+      for (const id in respostasCorretas) {
+        const input = document.getElementById(id);
+        const resposta = input.value.trim().toLowerCase();
+        const correta = respostasCorretas[id].toLowerCase();
+
+        if (resposta === correta) {
+          total++;
+        }
+      }
+      document.getElementById("acertos").textContent = total;
+    }
+
+    
+
+    for (const id in respostasCorretas) {
+      const input = document.getElementById(id);
+      input.addEventListener("input", () => verificar(id));
+    }
+
+    // Aplica a lógica para todos os inputs do tipo text
+    document.querySelectorAll('input[type="text"]').forEach(input => {
+      ajustarLargura(input);
+      input.addEventListener("input", () => {
+        verificar(input.id);
+        ajustarLargura(input);
+      });
+    });
+  </script>
+
+</body>
+
+</html>

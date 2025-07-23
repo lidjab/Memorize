@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estoodi</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .voltar {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 1rem;
+      color: #4a90e2;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    .container a button {
+      background-color: #e1eaff;
+      color: #1a1a1a;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 10px 5px;
+      width: 200px;
+    }
+
+    .container a button:hover {
+      background-color: #c9dbfa;
+    }
+
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .container a button {
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      .voltar {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="index.html" class="voltar">← Voltar</a>
+  
+  <div class="container">
+    <h2>Para onde vamos hoje?</h2>
+    <a href="modifiqueOTexto.html"><button>Seção II
+Dos principais deveres do servidor público do IBGE</button></a>
+    <a href="#"><button>Exercício 2</button></a>
+    <a href="#"><button>Exercício 3</button></a>
+    <a href="#"><button>Exercício 4</button></a>
+  </div>
+
+</body>
+
+</html>
