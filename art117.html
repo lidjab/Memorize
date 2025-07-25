@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estoodi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Essencial para responsividade -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        input[type="text"] {
+            width: 130px;
+            padding: 6px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+            transition: 0.3s ease;
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .correto {
+            border-color: rgb(0, 209, 0);
+            background-color: #47d65f;
+        }
+
+        .errado {
+            border-color: red;
+            background-color: #d82828;
+        }
+
+        .contador {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .espelho {
+            position: absolute;
+            visibility: hidden;
+            height: 0;
+            overflow: hidden;
+            white-space: pre;
+            font-family: inherit;
+            font-size: 16px;
+        }
+
+        .voltar {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 1rem;
+            color: #4a90e2;
+        }
+
+        /* Responsividade para celulares */
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.8;
+            }
+
+            input[type="text"] {
+                width: 100%;
+                font-size: 16px;
+            }
+
+            .contador {
+                font-size: 16px;
+            }
+
+            .voltar {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="escolha.html" class="voltar">← Voltar</a>
+
+    <div class="container">
+        <h2>Complete as lacunas corretamente</h2>
+
+        <p>
+            <!-- O <input type="text" id="resposta1" placeholder="Planeta"> é o maior planeta do sistema solar.<br>
+      A água ferve a <input type="text" id="resposta2" placeholder="Temperatura"> graus Celsius.<br>
+      O Brasil foi descoberto em <input type="text" id="resposta3" placeholder="Ano">. -->
+
+
+
+        <h2>Art. 117. Ao servidor é proibido:</h2>
+
+        I - ausentar-se <input type="text" id="resposta1">, sem prévia <input type="text" id="resposta2">;<br>
+        II - retirar, sem <input type="text" id="resposta3">, qualquer <input type="text" id="resposta4"> [2] da
+        repartição;<br>
+        III - recusar fé a <input type="text" id="resposta5">;<br>
+        IV - opor <input type="text" id="resposta6"> ao andamento de <input type="text" id="resposta7"> [3] de
+        serviço;<br>
+        V - promover <input type="text" id="resposta8"> no recinto da repartição;<br>
+        VI - cometer a <input type="text" id="resposta9">, fora dos casos previstos em lei, o <input type="text"
+            id="resposta10"> que seja de sua <input type="text" id="resposta11">[2];<br>
+        IX - valer-se do cargo <input type="text" id="resposta12"> ou de outrem, em <input type="text" id="resposta13">
+        da função pública;<br>
+        X - participar de gerência ou <input type="text" id="resposta14">, personificada ou não personificada, exercer o
+        <input type="text" id="resposta15">, exceto na qualidade de <input type="text" id="resposta16">, cotista ou
+        <input type="text" id="resposta17">; (Redação dada pela Lei nº 11.784, de 2008)<br>
+        XI - atuar, como <input type="text" id="resposta18">, junto a repartições públicas, salvo quando se tratar de
+        <input type="text" id="resposta19"> até o segundo grau, e de <input type="text" id="resposta20">;<br>
+        XII - receber <input type="text" id="resposta21"> [4] de qualquer espécie, em razão de suas atribuições;<br>
+        XIII - aceitar <input type="text" id="resposta22"> [3] de estado estrangeiro;<br>
+        XIV - praticar usura <input type="text" id="resposta23">;<br>
+        XV - proceder de forma <input type="text" id="resposta24">;<br>
+        XVI - utilizar pessoal ou <input type="text" id="resposta25"> em serviços ou <input type="text"
+            id="resposta26">;<br>
+        XVII - cometer a outro servidor <input type="text" id="resposta27"> que ocupa, exceto em situações de <input
+            type="text" id="resposta28"> [2];<br>
+        XVIII - exercer quaisquer atividades que <input type="text" id="resposta29"> com o exercício do <input
+            type="text" id="resposta30"> e com o <input type="text" id="resposta31">;<br>
+        XIX - recusar-se a <input type="text" id="resposta32"> cadastrais quando <input type="text" id="resposta33">.
+        (Incluído pela Lei nº 9.527, de 10.12.97)<br>
+
+
+        </p>
+
+        <div class="contador">
+            Acertos: <span id="acertos">0</span> de 33
+        </div>
+    </div>
+
+    <script>
+        const respostasCorretas = {
+            resposta1: "do serviço durante o expediente",
+            resposta2: "autorização do chefe imediato",
+            resposta3: "prévia anuência da autoridade competente",
+            resposta4: "documento ou objeto",
+            resposta5: "documentos públicos",
+            resposta6: "resistência injustificada",
+            resposta7: "documento e processo ou execução",
+            resposta8: "manifestação de apreço ou desapreço",
+            resposta9: "pessoa estranha à repartição",
+            resposta10: "desempenho de atribuição",
+            resposta11: "responsabilidade ou de seu subordinado",
+            resposta12: "para lograr proveito pessoal",
+            resposta13: "detrimento da dignidade",
+            resposta14: "administração de sociedade privada",
+            resposta15: "comércio",
+            resposta16: "acionista",
+            resposta17: "comanditário",
+            resposta18: "procurador ou intermediário",
+            resposta19: "benefícios previdenciários ou assistenciais de parentes",
+            resposta20: "cônjuge ou companheiro",
+            resposta21: "propina, comissão, presente ou vantagem",
+            resposta22: "comissão, emprego",
+            resposta23: "sob qualquer de suas formas",
+            resposta24: "desidiosa",
+            resposta25: "recursos materiais da repartição",
+            resposta26: "atividades particulares",
+            resposta27: "atribuições estranhas ao cargo",
+            resposta28: "emergência e transitórias",
+            resposta29: "sejam incompatíveis",
+            resposta30: "cargo ou função",
+            resposta31: "horário de trabalho",
+            resposta32: "atualizar seus dados",
+            resposta33: "solicitado"
+
+
+        };
+
+        // Cria um span oculto para medir o texto digitado
+        const espelho = document.createElement('span');
+        espelho.className = 'espelho';
+        document.body.appendChild(espelho);
+
+        function ajustarLargura(input) {
+            espelho.textContent = input.value || input.placeholder || '';
+            const largura = espelho.offsetWidth + 20;
+            input.style.width = largura + 'px';
+        }
+
+        function verificar(id) {
+            const input = document.getElementById(id);
+            const valorUsuario = input.value.trim().toLowerCase();
+            const valorCorreto = respostasCorretas[id].toLowerCase();
+
+            if (valorUsuario === "") {
+                input.classList.remove("correto", "errado");
+            } else if (valorUsuario === valorCorreto) {
+                input.classList.add("correto");
+                input.classList.remove("errado");
+            } else {
+                input.classList.add("errado");
+                input.classList.remove("correto");
+            }
+
+            atualizarContador();
+        }
+
+        function atualizarContador() {
+            let total = 0;
+            for (const id in respostasCorretas) {
+                const input = document.getElementById(id);
+                const resposta = input.value.trim().toLowerCase();
+                const correta = respostasCorretas[id].toLowerCase();
+
+                if (resposta === correta) {
+                    total++;
+                }
+            }
+            document.getElementById("acertos").textContent = total;
+        }
+
+
+
+        for (const id in respostasCorretas) {
+            const input = document.getElementById(id);
+            input.addEventListener("input", () => verificar(id));
+        }
+
+        // Aplica a lógica para todos os inputs do tipo text
+        document.querySelectorAll('input[type="text"]').forEach(input => {
+            ajustarLargura(input);
+            input.addEventListener("input", () => {
+                verificar(input.id);
+                ajustarLargura(input);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
